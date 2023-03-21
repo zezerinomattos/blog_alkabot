@@ -15,7 +15,7 @@ function Home() {
           </div>
         </header>
 
-        <h1>teste</h1>
+        
     </>
   );
 }
