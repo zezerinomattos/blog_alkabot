@@ -8,7 +8,7 @@ Para clonar o projeto em seu computador, siga as instruções abaixo:
 
 1. Abra o terminal e navegue até o diretório em que deseja clonar o projeto.
 
-2. Execute o seguinte comando: git clone https://github.com/SEU-USUARIO/blog_alkabot.git (substitua "SEU-USUARIO" pelo seu nome de usuário no GitHub e "nome-do-repositorio" pelo nome do seu repositório)
+2. Execute o seguinte comando: git clone https://github.com/SEU-USUARIO/blog_alkabot.git (substitua "SEU-USUARIO" pelo seu nome de usuário no GitHub)
 
 3. Após o término do processo, navegue para o diretório do projeto com o comando cd blog_alkabot.
 
@@ -22,13 +22,10 @@ Para clonar o projeto em seu computador, siga as instruções abaixo:
 O projeto foi criado com o comando npx create-react-app e possui a seguinte estrutura:
 
 blog_alkabot/
-
   node_modules/
-  
   public/
     index.html
     robots.txt
-
   src/
     components/
       Navbar/
@@ -36,8 +33,7 @@ blog_alkabot/
       Footer/
         index.js
       Paginacao/
-        index.js
-    
+        index.js    
     pages/
       Home/
         index.js
