@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1{
+  font-family: 'Mynerve', cursive;
+  text-shadow: 4px 4px 6px #000;
+  font-weight: 700;
+  font-size: max(44px, 5.2vw);
+}
+
+h2{
+  font-family: 'Marhey', cursive;
+  text-shadow: 4px 4px 6px #464646;
+  font-weight: 700;
+  font-size: max(20px, 2.8vw);
+}
+
+

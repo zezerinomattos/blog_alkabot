@@ -58,13 +58,13 @@ nav ul.menu-principal li{
 nav ul.menu-principal li a{
     text-decoration: none;
     font-size: 110%;
-    color: #02402E;
+    color: #63BF21;
     font-family: 'Roboto', sans-serif;
     transition: .3s ease-out;
 }
 
 nav ul.menu-principal li a:hover{
-    color: #3ABF15;
+    color: #07593B;
 }
 
 /*-------- MENU HAMBURGUER -------------- */
@@ -78,6 +78,6 @@ ul.menu-humburguer li{
 
 ul.menu-humburguer li ion-icon{
     font-size: 50px;
-    color: #02402E;
+    color: #63BF21;
     margin-right: 2rem;
 }
