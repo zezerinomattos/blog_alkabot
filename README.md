@@ -22,10 +22,13 @@ Para clonar o projeto em seu computador, siga as instruções abaixo:
 O projeto foi criado com o comando npx create-react-app e possui a seguinte estrutura:
 
 blog_alkabot/
+
   node_modules/
+  
   public/
     index.html
     robots.txt
+
   src/
     components/
       Navbar/
@@ -33,7 +36,8 @@ blog_alkabot/
       Footer/
         index.js
       Paginacao/
-        index.js    
+        index.js
+    
     pages/
       Home/
         index.js
