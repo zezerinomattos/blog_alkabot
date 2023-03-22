@@ -1,0 +1,15 @@
+div.container{
+    max-width: 800px;
+    height: 20vw;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container h1{
+    color: #02402E;
+    font-size: max(22px, 1.8vw);
+}

@@ -9,6 +9,10 @@ export default function Footer(){
 
     const [email, setEmail] = useState('');
 
+    function assinatura(){
+        alert('Por favor, observe que esta funcionalidade é apenas para fins de demonstração visual e não faz parte do teste.');
+    }
+
     return(
         <>
             <footer>
@@ -24,7 +28,7 @@ export default function Footer(){
                 <h3>CADASTRE-SE E RECEBA DICAS, RECEITAS E OFERTAS!</h3>
                 <form className='assinar'>
                     <input className='form-email' type="email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder='Seu endereço de e-mail'/>
-                    <button className='btn-email mx-2'>Assinar</button>
+                    <button onClick={assinatura} className='btn-email mx-2' >Assinar</button>
                 </form>
 
                 <span>Copyright © Zezerino Mattos. Todos diretos reservados.</span>
