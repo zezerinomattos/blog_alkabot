@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Bloag Alkabot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto criado em React.js que consome uma API externa de posts e tem como função principal exibir esses posts em uma página Home e os comentários associados em uma página PostDetalhe.
 
-## Available Scripts
+## Como clonar e rodar o projeto
 
-In the project directory, you can run:
+Para clonar o projeto em seu computador, siga as instruções abaixo:
 
-### `npm start`
+1. Abra o terminal e navegue até o diretório em que deseja clonar o projeto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Execute o seguinte comando: git clone https://github.com/SEU-USUARIO/blog_alkabot.git (substitua "SEU-USUARIO" pelo seu nome de usuário no GitHub e "nome-do-repositorio" pelo nome do seu repositório)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Após o término do processo, navegue para o diretório do projeto com o comando cd blog_alkabot.
 
-### `npm test`
+4. Instale as dependências do projeto com o comando npm install.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Para iniciar o projeto, execute o comando npm start. O projeto será executado na porta padrão do React, a porta 3000 [http://localhost:3000](http://localhost:3000).
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura do projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O projeto foi criado com o comando npx create-react-app e possui a seguinte estrutura:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+blog_alkabot/
 
-### `npm run eject`
+  node_modules/
+  
+  public/
+    index.html
+    robots.txt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  src/
+    components/
+      Navbar/
+        index.js
+      Footer/
+        index.js
+      Paginacao/
+        index.js
+    
+    pages/
+      Home/
+        index.js
+      PostDetalhe/
+        index.js
+    
+    router/
+      index.js
+    
+    services/
+      api.js
+    
+    App.js
+    App.css
+    index.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    package.json
+    README.md
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+node_modules/: diretório que contém as dependências do projeto.
 
-## Learn More
+public/: diretório que contém os arquivos públicos do projeto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+src/: diretório que contém os arquivos-fonte do projeto.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+components/: diretório que contém os componentes do projeto.
 
-### Code Splitting
+pages/: diretório que contém as páginas do projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+router/: diretório que contém o arquivo de rotas do projeto.
 
-### Analyzing the Bundle Size
+services/: diretório que contém o arquivo responsável por consumir a API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+App.js: arquivo que contém o componente raiz do projeto.
 
-### Making a Progressive Web App
+App.css: arquivo de estilos globais do projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+index.js: arquivo que inicia o projeto.
 
-### Advanced Configuration
+package.json: arquivo que contém as informações do projeto, como nome, versão e dependências.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+README.md: este arquivo que você está lendo.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Executando o projeto
 
-### `npm run build` fails to minify
+Para executar o projeto, siga as instruções abaixo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Navegue até o diretório do projeto com o comando cd blog_alkabot.
+
+2. Execute o comando npm start.
+
+3. O projeto será executado na porta padrão do React, a porta 3000 [http://localhost:3000](http://localhost:3000).
+
+## Conclusão
+
+Espero que este readme tenha sido claro e esclarecedor sobre como clonar e rodar o projeto. Qualquer dúvida, não hesite em entrar em contato. Obrigado pela atenção!
+
