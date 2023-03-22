@@ -11,6 +11,7 @@ import imgDefault from '../../images/post-sem-imagem.jpg'
 import Navbar from '../../components/Navbar';
 import api from '../../services/api';
 import Pagination from '../../components/Pagination';
+import Footer from '../../components/Footer';
 
 function Home() {
 
@@ -87,6 +88,7 @@ function Home() {
           </section>
         </main>
         
+        <Footer />
     </>
   );
 }

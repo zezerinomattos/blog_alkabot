@@ -1,0 +1,102 @@
+/*
+    #02402E
+    #07593B
+    #3ABF15
+    #63BF21
+    #BF8F54
+
+    font-family: 'Caveat', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Marhey', cursive;
+    font-family: 'Mynerve', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
+/*----------------------------*/
+/*          FOOTER            */
+/*----------------------------*/
+
+footer{
+    width: 100%;
+    padding: 20px 10px 40px 10px;
+    border-top: 5px solid #BF8F54;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-------- LOGO -------------- */
+footer div.footer-logo{
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+footer div.footer-logo img{
+    max-width: 100%;
+}
+
+/*-------- Redes sociais -------------- */
+
+footer div.footer-redes-sociais{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+footer div.footer-redes-sociais li{
+    list-style: none;
+    margin: 0 8px;
+}
+
+footer div.footer-redes-sociais a{
+    color: #02402E;
+    text-decoration: none;
+}
+
+footer div.footer-redes-sociais a:hover{
+    opacity: .7;
+}
+
+footer div.footer-redes-sociais ion-icon{
+    font-size: max(22px, 1.8vw);
+}
+
+/*-------- Form -------------- */
+footer h3{
+    font-size: max(18px, 1.8vw);
+    color: #07593B;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+form.assinar{
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form.assinar input.form-email{
+    width: 70%;
+    height: 34px;
+    padding: 0 8px;
+}
+
+form.assinar button{
+    width: 20%;
+    height: 34px;
+    background-color: #02402E;
+    color: #FFF;
+}
+
+form.assinar button:hover{
+    opacity: .8;
+}
