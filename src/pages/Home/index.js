@@ -10,18 +10,32 @@ import imgDefault from '../../images/post-sem-imagem.jpg'
 
 import Navbar from '../../components/Navbar';
 import api from '../../services/api';
+import Pagination from '../../components/Pagination';
 
 function Home() {
 
   const [posts, setPosts] = useState([]);
   const [loading, setLoadig] = useState(true);
 
-  async function loadPosts(){
-    const response = await api.get('posts')
+  //PAGINAÇÃO
+  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [currentPage, setCurrentPage] = useState(0);
 
-    // console.log(response.data.slice(0, 10))
-    setPosts(response.data.slice(0, 10));
-    setLoadig(false);
+  //CALCULOS PARA DESCOBRIR NUMERO DE PAGINAS QUE TEREI
+  const pages = Math.ceil(posts.length / postsPerPage);
+
+  //FILTRANDO LISTA DE ITENS DE 10 EM 10
+  const startIndex = currentPage * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+  const currentItens = posts.slice(startIndex, endIndex);
+
+  async function loadPosts(){
+    await api.get('posts')
+      .then((response) => {
+        setPosts(response.data);
+
+        setLoadig(false);
+      })
   }
 
   useEffect(() => {
@@ -38,26 +52,38 @@ function Home() {
               <Link to="#" target="_blank">SAIBA MAIS</Link>
           </div>
         </header>
-
-        <main>
+        
+        <main>        
           <section className='posts'>
             <h1>Transforme sua saúde e sabor agora!</h1>
-          
-            <div className='posts-container'>
-              {
-                posts.map((post) => {
-                  return(
-                    <article key={post.id}>
-                        <div className='img-post'>
-                          <img src={post.img ? post.img : imgDefault} alt="Ilustração do post"/>
-                        </div>
-                        <h3>{post.title}</h3>
-                        <span>{post.body}</span>
-                    </article>
-                  )
-                })
-              }
-            </div>
+
+            {
+              // FAZENDO UMA CONDIÇÃO SE ESTIVER CARREGANDO MOSTRA UM SPINNER DO BOOTSTRAP
+              loading ?
+                <div class="spinner-border text-success my-5" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              :
+              // SE DEU TUDO CERTO MOSTRA OS POSTS E ESCONDE O SPINNER
+                <div className='posts-container'>
+                  {
+                    currentItens.map((post) => {
+                      return(
+                        <article key={post.id}>
+                            <div className='img-post'>
+                              <img src={post.img ? post.img : imgDefault} alt="Ilustração do post"/>
+                            </div>
+                            <h3>{post.title}</h3>
+                            <span>{post.body}</span>
+                        </article>
+                      )
+                    })
+                  }
+                </div>
+            }
+
+            {/* CHAMANDO O COMPONENTE DE PAGINAÇÃO */}
+            <Pagination setCurrentPage={setCurrentPage} pages={pages}/>
           </section>
         </main>
         
