@@ -37,6 +37,9 @@ function Home() {
 
         setLoadig(false);
       })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   useEffect(() => {
@@ -76,6 +79,8 @@ function Home() {
                             </div>
                             <h3>{post.title}</h3>
                             <span>{post.body}</span>
+
+                            <Link to={`/detalhespost/${post.id}`} className='post-saiba-mais'>Saiba Mais</Link>
                         </article>
                       )
                     })

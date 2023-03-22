@@ -156,3 +156,18 @@ section.posts div.posts-container article span{
     margin-top: 10px;
     text-shadow: 2px 2px 6px #2b2a2a;
 }
+
+section.posts div.posts-container article a.post-saiba-mais{
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #07593B;
+    margin-top: 20px;
+    color: #2b2a2a;
+    transition: .3s ease-out;
+}
+
+section.posts div.posts-container article a.post-saiba-mais:hover{
+    background-color: #63BF21;
+    opacity: .7;
+    color: #FFF;
+}

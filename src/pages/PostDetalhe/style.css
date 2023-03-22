@@ -1,0 +1,61 @@
+/*
+    #02402E
+    #07593B
+    #3ABF15
+    #63BF21
+    #BF8F54
+
+    font-family: 'Caveat', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Marhey', cursive;
+    font-family: 'Mynerve', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+
+/*----------------------------*/
+/*          COMENTARIOS       */
+/*----------------------------*/
+
+section.detalhes{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.comentarios{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.comentarios article{
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-top: 1px solid #02402E;
+}
+
+div.comentarios article h4{
+    font-family: 'Caveat', cursive;
+    color: #BF8F54;
+    margin-top: 10px;
+}
+
+div.comentarios article span{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    color: #02402E;
+}
+
+div.comentarios article p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    color: #02402E;
+}
